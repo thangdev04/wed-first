@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#wrapper{
+    width: 100%;
+    min-height: 100vh;
+   
+}
+#header{
+    width: 100%;
+    padding: 0px 30px; 
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu{
+    
+    display: flex;
+}
+#menu .item{
+    margin: 0 25px;
+}
+#menu .item a{
+    text-decoration: none; 
+    color: #757171;
+}
+#actions {
+    display: flex;
+
+}
+#actions .item{
+    margin-left: 40px;
+}
+#actions .item img{
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+#actions .item img:hover{
+    transform: scale(1.2);
+}
+/* end header */
+
+
+#banner{
+    width: 100%;
+    background-image: url("assets/banner.png");
+    height: 463px;
+    margin-top: 40px;
+    display: flex;
+    padding: 0px 100px;
+    position: relative;
+
+}
+#banner .box-left, #banner .box-right{
+    width: 50%;
+}
+#banner .box-left h2{
+    font-size: 40px;
+    margin-top: 75px;
+    color: #ccc;
+}
+#banner .box-left p{
+    color: #ccc;
+}
+#banner .box-left button{
+    width: 150px;
+    height: 40px;
+    background: grey;
+    border: none;
+    margin-top: 40px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #fff;
+    border-radius: 20px;
+    transition: transform 0.4s;
+    transition-duration: 2s;
+    cursor:pointer;
+
+}
+#banner .box-left button:hover{
+    background: #636262;
+    transform: scale(1.1);
+}
+#banner .box-right {
+    padding-left: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner .box-right img{
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
+}
+#banner .box-right img:nth-child(1){
+ animation-delay: 0.5s;
+}
+#banner .box-right img:nth-child(2){
+    animation-delay: 1s;
+}
+#banner .box-right img:nth-child(3){
+    animation-delay: 0.5s;
+}
+@keyframes animation {
+    0%{
+        transform: translatex(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.to-bottom{
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+#wrap-products{
+    padding: 0 40px;
+    padding-top: 75px;
+    padding-bottom:  78px;
+    
+}
+#wrap-products > h2{
+    text-align: center;
+    margin-bottom: 75px;
+    font-size: 32px;
+    color:grey;
+}
+#list-products{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+#list-products .item{
+    width: 265px;
+    height: 380px;
+    background: #362f2f;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    overflow: hidden;
+    
+}
+#list-products .item > img{
+    display: block;
+    width: 100%;
+    height:144;
+    
+    transition: transform 1s;
+}
+
+#list-products .item img{
+    display: block;
+    width: 256;
+    height:174;
+    margin: 0px  auto;
+   
+    
+    
+}
+#list-products .item > img:hover{
+    transform: scale(1.2);
+    
+}
+#list-products .item .stars{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#list-products .item .name{
+    text-align: center;
+    color: #ccc;
+}
+#list-products .item .desc{
+    text-align: center;
+    color: #ccc;
+}
+#list-products .item .price{
+    color: red;
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+.list-page{
+    width: 50%;
+    margin: 50px auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item{
+    cursor: pointer;
+    margin: 0px 20px;
+    width: 37px;
+    height: 37px;
+    background-color: #362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    transition: transform 0.3s;
+    
+}
+.list-page .item:hover{
+    transform: scale(1.2);
+   
+}
+.list-page .item a{
+    color: #ccc;
+    text-decoration: none;
+}
+#saleoff{
+    width: 100%;
+    display:flex;
+    height: 332px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+#saleoff .box-left, #saleoff .box-right{
+    border-radius: 30px;
+    width: 48%;
+}
+#saleoff .box-left{
+    background-color: #362f2f;
+    text-align: center;
+    min-height: 322px;
+}
+#saleoff .box-left h1{
+    padding-top: 38px;
+    margin-bottom: 60px;
+    
+}
+#saleoff .box-left span:nth-child(1){
+    display:block;
+    color: #ccc;
+    
+}
+#saleoff .box-left span:nth-child(2){
+    color: #ccc;
+    font-size: 30px;
+}
+#saleoff .box-left span:nth-child(3){
+    color: red;
+    font-size: 100px;
+}
+#saleoff .box-right{
+    margin-left: 5px;
+    
+    background-image: url(assets/off.png);
+}
+/*  end body-products */
+
+/* coment */
+#comment{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    
+    margin-top: 100px;
+}
+#comment h2{
+    color: grey;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.comment-body{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    margin: 40px 0;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+   
+}
+#list-comment{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.5s;
+    
+    
+}
+#list-comment .item1{
+    width: 1100px;
+    height: 400px;
+    background-color: #362f2f;
+    margin: 20px 10px;
+    padding: 30px;
+    color: #fff;
+    border-radius: 40px;;
+}
+#list-comment .item1 .avatar{
+    text-align: center;
+    margin-top: 20px;
+}
+#list-comment .item1 .name{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+#list-comment .item1 .stars{
+    text-align: center;
+    margin-top: 30px;
+}
+#list-comment .item1 .text{
+    margin-top: 30px;
+}
+#list-comment .item2{
+    border-radius: 40px;
+    position:absolute;
+    width: 1100px;
+    height: 400px;
+    background-color: #362f2f;
+    margin: 20px 10px;
+    padding: 20px;
+    right: -99%
+    
+}
+#list-comment .item2 .avatar{
+    text-align: center;
+    margin-top: 20px;
+}
+#list-comment .item2 .name{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #fff;
+}
+#list-comment .item2 .stars{
+    text-align: center;
+    margin-top: 30px;
+}
+#list-comment .item2 .text{
+    margin-top: 30px;
+    color: #fff;
+}
+#footer{
+    width: 1400px;
+    min-height: 100%;
+    padding: 0px;
+    margin: 80px 0px;
+    box-sizing: border-box;
+    border:1px solid black;
+    background-color: #362f2f;
+    border-radius: 20px;
+    
+}
+#footer .footer-box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 450px 275px 275px 400px;
+    grid-template-rows: 250px;
+
+}
+#footer .footer-box .item{
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+#footer .footer-box .item a{
+    text-decoration: none;
+}
+
+#footer .footer-box .item1{
+    color: #fff;
+    
+}
+#footer .footer-box .item1 .logo{
+    display:flex;
+    margin: 0px 0px 40px 0px;
+    
+}
+#footer .footer-box .item1 .logo .logo-footer{
+    margin: 5px 20px 0 0 ;
+}
+#footer .footer-box .item1 .logo h2{
+    color:#ccc;
+    font-style:italic;
+    
+}
+#footer  .footer-box .item1 .text{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+  .footer-box .item1 .text span{
+    color:#ccc;
+    font-style:italic;
+}
+#footer .footer-box .item2{
+    text-decoration: none;
+    color: #ccc
+}
+
+#footer .footer-box .item2 ul li{
+    margin: 10px 0;
+}
+#footer .footer-box .item2 a{
+    color: #fff;
+    
+}
+#footer .footer-box .item3{
+    text-decoration: none;
+    color: #ccc
+}
+
+#footer .footer-box .item3 ul li{
+    margin: 10px 0;
+}
+#footer .footer-box .item3 a{
+    color: #fff;
+    
+}
+#footer .footer-box .item4{
+    text-decoration: none;
+    color: #ccc;
+    
+}
+
+#footer .footer-box .item4 ul li{
+    margin: 10px 0;
+}
+#footer .footer-box .item4 span{
+    color: #fff;
+    
+}
